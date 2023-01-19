@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32 (2).png" />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="Styles.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        
+        <br />
+        
+      </h1>
+
+      <div class="container">
+        <div class="flex main-flex">
+          <div class="col flex main-left">
+            <div class="bill-input-group col flex">
+              <label>Bill</label>
+              <input type="number" class="bill-input" placeholder="0" />
+            </div>
+            <div class="tips col">
+              <div class="select-tip">Select Tip %</div>
+              <div class="tip-amounts flex">
+                <div class="tip-box" data-tip="5">5%</div>
+                <div class="tip-box" data-tip="10">10%</div>
+                <div class="tip-box" data-tip="15">15%</div>
+                <div class="tip-box" data-tip="25">25%</div>
+                <div class="tip-box" data-tip="50">50%</div>
+                <div class="tip-box">Custom</div>
+              </div>
+            </div>
+            <div class="people-number-input-group col">
+              <label class="people-number-text">Number of People</label>
+              <input
+                type="number"
+                class="people-number-input"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="col flex main-right">
+            <div class="col flex-row justify-content-between">
+              <div class="tip-amount-text">
+                Tip Amount
+                <br />
+                <span>/ person</span>
+              </div>
+              <div class="tip-amount">
+                ₹
+                <span class="tip-amount-span">0.00</span>
+              </div>
+            </div>
+            <div class="col flex-row justify-content-between">
+              <div class="total-text">
+                Total
+                <br />
+                <span>/ person</span>
+              </div>
+              <div class="total">
+                ₹
+                <span class="total-span">0.00</span>
+              </div>
+            </div>
+
+            <button type="button" class="reset">reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
